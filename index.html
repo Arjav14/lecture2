@@ -10,7 +10,7 @@
     <header>
         <h1>Mastering Robotics from Ground Up</h1>
         <p class="subtitle">Thynk limitless</p>
-        <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\Certificate.jpg" alt="Bidyut Logo" 
+        <img src="images\Certificate.jpg" alt="Bidyut Logo" 
         style="position: absolute; right: 20px; top: 8px; height: 110px; width: 200px; object-fit: fill;">
     </header>
 
@@ -63,7 +63,7 @@ sudo apt install ros-humble-turtlesim</code></pre>
                 <h3>Running Turtlesim</h3>
                 <p>Start turtlesim:</p>
                 <pre><code>ros2 run turtlesim turtlesim_node</code></pre>
-                <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\turtlesim.png" alt="Turtlesim Example" style="max-width:100%; height:400px; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                <img src="images\turtlesim.png" alt="Turtlesim Example" style="max-width:100%; height:400px; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
                 <p>The simulator window should appear with a random turtle in the center.</p>
 
                 <h3>Controlling the Turtle</h3>
@@ -96,7 +96,7 @@ sudo apt install '~nros-humble-rqt*'</code></pre>
                 <h3>Running rqt</h3>
                 <pre><code>rqt</code></pre>
                 <p>When running rqt for the first time, the window will be blank. Select <strong>Plugins > Services > Service Caller</strong> from the menu bar.</p>
-                <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\rqt.png" alt="Turtlesim Example" style="max-width:100%; height:400px; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                <img src="images\rqt.png" alt="Turtlesim Example" style="max-width:100%; height:400px; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
 
             </section>
 
@@ -107,17 +107,17 @@ sudo apt install '~nros-humble-rqt*'</code></pre>
                 <h3>Running a ROS 2 Node</h3>
                 <pre><code>ros2 run &lt;package_name&gt; &lt;executable_name&gt;</code></pre>
                 <p><strong>Definition:</strong> This command runs a node executable from a given ROS 2 package.</p>
-                <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\img1.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                <img src="images\img1.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
 
                 <h3>Listing Active Nodes</h3>
                 <pre><code>ros2 node list</code></pre>
                 <p><strong>Definition:</strong> Displays all currently running nodes in the ROS 2 system.</p>
-                <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\img2.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                <img src="images\img2.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
 
                 <h3>Getting Information About a Node</h3>
                 <pre><code>ros2 node info /&lt;node_name&gt;</code></pre>
                 <p><strong>Definition:</strong> Retrieves detailed information about a node, including the topics it publishes or subscribes to, services it provides, and actions it handles.</p>
-                <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\img3.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                <img src="images\img3.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
 
             </section>
 
@@ -128,19 +128,19 @@ sudo apt install '~nros-humble-rqt*'</code></pre>
                 <h3>Listing Available Topics</h3>
                 <pre><code>ros2 topic list</code></pre>
                 <p><strong>Definition:</strong> Displays all currently active topics in the ROS 2 system.</p>
-                <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\img4.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                <img src="images\img4.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
 
                 <h3>Displaying Messages Published on a Topic</h3>
                 <pre><code>ros2 topic echo /&lt;topic_name&gt;</code></pre>
                 <p><strong>Definition:</strong> Continuously outputs messages being published to a specified topic.</p>
                 <p><strong>Example:</strong> <code>ros2 topic echo /turtle1/pose</code></p>
-                <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\img5.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                <img src="images\img5.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
 
                 <h3>Retrieving Topic Information</h3>
                 <pre><code>ros2 topic info /&lt;topic_name&gt;</code></pre>
                 <p><strong>Definition:</strong> Displays metadata about a topic, such as message type and publisher/subscriber counts.</p>
                 <p><strong>Example:</strong> <code>ros2 topic info /turtle1/cmd_vel</code></p>
-                <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\img6.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                <img src="images\img6.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
                 <section id="topics">
                     
     
@@ -149,7 +149,7 @@ sudo apt install '~nros-humble-rqt*'</code></pre>
                     <p><strong>Definition:</strong> Displays the structure of a message type used in communication.</p>
                     <p><strong>Example:</strong></p>
                     <pre><code>ros2 interface show geometry_msgs/msg/Twist</code></pre>
-                    <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\img7.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                    <img src="images\img7.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
 
     
                     <h3>Publishing a Message to a Topic</h3>
@@ -157,7 +157,7 @@ sudo apt install '~nros-humble-rqt*'</code></pre>
                     <p><strong>Definition:</strong> Manually publishes a message to a topic, useful for testing.</p>
                     <p><strong>Example:</strong></p>
                     <pre><code>ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"</code></pre>
-                    <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\img8.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                    <img src="images\img8.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
 
                     <p><strong>Effect:</strong> Moves the turtle forward while rotating.</p>
     
@@ -166,7 +166,7 @@ sudo apt install '~nros-humble-rqt*'</code></pre>
                     <p><strong>Definition:</strong> Displays the frequency at which messages are being published to a topic.</p>
                     <p><strong>Example:</strong></p>
                     <pre><code>ros2 topic hz /turtle1/pose</code></pre>
-                    <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\img9.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                    <img src="images\img9.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
 
                 </section>
             </section>
@@ -178,19 +178,19 @@ sudo apt install '~nros-humble-rqt*'</code></pre>
                 <h3>Listing Available Services</h3>
                 <pre><code>ros2 service list</code></pre>
                 <p><strong>Definition:</strong> Lists all active services currently available in the system.</p>
-                <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\img10.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                <img src="images\img10.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
 
                 <h3>Retrieving the Type of a Service</h3>
                 <pre><code>ros2 service type /&lt;service_name&gt;</code></pre>
                 <p><strong>Definition:</strong> Displays the type of message structure used by a service.</p>
                 <p><strong>Example:</strong> <code>ros2 service type /spawn</code></p>
-                <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\img11.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                <img src="images\img11.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
                 <h3>Calling a Service</h3>
                 <pre><code>ros2 service call /&lt;service_name&gt; &lt;service_type&gt; "{request_parameters}"</code></pre>
                 <p><strong>Definition:</strong> Sends a request to a service and waits for a response.</p>
                 <p><strong>Example:</strong></p>
                 <pre><code>ros2 service call /spawn turtlesim/srv/Spawn "{x: 2.0, y: 3.0, theta: 0.0, name: 'turtle2'}"</code></pre>
-                <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\img13.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                <img src="images\img13.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
 
             </section>
             </section>
@@ -242,7 +242,7 @@ sudo apt install '~nros-humble-rqt*'</code></pre>
                 <h3>Sending a Goal to an Action Server</h3>
                 <pre><code>ros2 action send_goal /&lt;action_name&gt; &lt;action_type&gt; "{goal_parameters}"</code></pre>
                 <p><strong>Definition:</strong> Sends a goal request to an action server, initiating a task.</p>
-                <img src="C:\Users\HP\OneDrive\Desktop\ros lecture series\images\img12.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                <img src="images\img12.png" alt="Turtlesim Example" style="max-width:100%; height:auto; display:block; margin:20px auto; border:1px solid #ddd; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
             </section>
         </main>
 
